@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Connect with Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Mindrix Portfolio</a>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="container contact-section">
+      <h1 class="section-title">Connect with Me</h1>
+
+      <div class="contact-wrap">
+        <form class="contact-form" action="#" method="post" onsubmit="alert('Form demo — replace action with server endpoint'); return false;">
+          <label>
+            <span class="label-text">Name</span>
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            <span class="label-text">Email</span>
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <button class="btn primary" type="submit">Submit</button>
+        </form>
+
+        <aside class="social-block">
+          <h3>Find me</h3>
+          <p class="social-links">
+            <a href="#" aria-label="LinkedIn">LinkedIn</a><br/>
+            <a href="#" aria-label="GitHub">GitHub</a><br/>
+            <a href="#" aria-label="Instagram">Instagram</a>
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year5"></span> Dishanth Jain</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year5').textContent = new Date().getFullYear();</script>
+</body>
+</html>

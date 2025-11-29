@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — The Lab of Creations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Mindrix Portfolio</a>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="container projects">
+      <h1 class="section-title">Projects</h1>
+      <div class="projects-grid">
+        <!-- repeatable project card -->
+        <article class="project-card">
+          <h3>Spotify Replica Demo</h3>
+          <p class="project-desc">Full demo of a music app with playlists and modern UI (mobile-friendly).</p>
+          <a class="project-link" href="#">View project →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>AI Avatar Video Generator</h3>
+          <p class="project-desc">Prototype web app that composes avatar videos from scripts and voiceovers.</p>
+          <a class="project-link" href="#">View project →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Chess Trainer</h3>
+          <p class="project-desc">Tools and puzzles to improve tactics and reach higher chess ratings.</p>
+          <a class="project-link" href="#">View project →</a>
+        </article>
+
+        <!-- add more project-card blocks as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> Dishanth Jain</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

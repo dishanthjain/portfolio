@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Explorer's Base — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Dishanth Jain</a>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="hero container grid-two-col">
+      <div class="hero-text">
+        <h1>Welcome to the Explorer's Base</h1>
+        <p class="lead">
+          I'm <strong>Dishanth Jain</strong>, a 2nd year Computer Science student at Sahyadri College of Engineering and Management.
+          I enjoy building clean web interfaces, learning C++ and Java, and experimenting with AI prototypes. Browse my projects and achievements to see what I've been working on.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="projects.html">Explore My Work</a>
+          <a class="btn ghost" href="about.html">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-placeholder.jpg" alt="Decorative image" />
+      </div>
+    </section>
+
+    <section class="container features">
+      <h2 class="section-title">What I do</h2>
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Web Development</h3>
+          <p>Interactive UI, responsive layouts, and performance-minded code.</p>
+        </article>
+        <article class="feature-card">
+          <h3>AI Prototypes</h3>
+          <p>Small, testable AI projects and demos integrating APIs and ML models.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Competitive Programming & Chess</h3>
+          <p>Practicing algorithms and chess tactics — always pushing to improve.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Dishanth Jain — Sahyadri College</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

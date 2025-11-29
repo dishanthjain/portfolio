@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Achievements — Milestones Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Mindrix Portfolio</a>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="achievements.html" class="nav-link active">Achievements</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="container achievements">
+      <h1 class="section-title">Milestones</h1>
+
+      <div class="achievement-stack">
+        <div class="achievement-card">
+          <div class="ach-band"></div>
+          <div class="ach-content">
+            <h3>State-level Coding Competition — 1st Place</h3>
+            <p>Recognized for a full-stack project built under time constraints.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="ach-band"></div>
+          <div class="ach-content">
+            <h3>Top 100 in Online Challenge</h3>
+            <p>High ranking in a competitive programming contest.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="ach-band"></div>
+          <div class="ach-content">
+            <h3>College Volunteer Recognition</h3>
+            <p>Awarded for organizing and volunteering at departmental events.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> Dishanth Jain</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>
